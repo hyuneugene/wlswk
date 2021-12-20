@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VIDEO</title>
+
+	<link href="CSTMXprmntl02-Regular-Web.css" rel="CSTMXprmntl02-Regular-Web" type="text/css"/>
+	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css" />
+
+	<style type="text/css">
+		@import url("CSTMXprmntl02-Regular-Web.css");
+		@import url("stylesheet.css");
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+		@font-face {
+    	font-family: 'CSTMXprmntl02';
+    	src: url('CSTMXprmntl02-Regular-Web.eot'); /* IE9 Compat Modes */
+    	src: url('CSTMXprmntl02-Regular-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CSTMXprmntl02-Regular-Web.woff') format('woff'), /* Modern Browsers */
+         url('CSTMXprmntl02-Regular-Web.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CSTMXprmntl02-Regular-Web.svg#CSTMXprmntl02-Regular-Web') format('svg'); /* Legacy iOS */
+    	font-style: normal;
+    	font-weight: normal;
+    	text-rendering: optimizeLegibility;
+		}
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Regular.eot');
+		    src: local('Union Regular'), local('Union-Regular'),
+		        url('Union-Regular.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Regular.woff2') format('woff2'),
+		        url('Union-Regular.woff') format('woff'),
+		        url('Union-Regular.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-BoldItalic.eot');
+		    src: local('Union Bold Italic'), local('Union-BoldItalic'),
+		        url('Union-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-BoldItalic.woff2') format('woff2'),
+		        url('Union-BoldItalic.woff') format('woff'),
+		        url('Union-BoldItalic.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Italic.eot');
+		    src: local('Union Italic'), local('Union-Italic'),
+		        url('Union-Italic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Italic.woff2') format('woff2'),
+		        url('Union-Italic.woff') format('woff'),
+		        url('Union-Italic.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Bold.eot');
+		    src: local('Union Bold'), local('Union-Bold'),
+		        url('Union-Bold.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Bold.woff2') format('woff2'),
+		        url('Union-Bold.woff') format('woff'),
+		        url('Union-Bold.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: normal;
+		}
+		
+		body{margin: 0;}
+		section{font-family: "CSTMXprmntl02"; font-size: 58px;}
+		div p{margin:0;}
+
+
+		.bg-ye{background-color: #b5ff24; transition: all 0.2s;}
+		.bg-gray{background-color: #F0F0F0; transition: all 0.2s;}
+		.bg-wh{background-color: white; transition: all 0.2s;}
+
+
+		nav{font-family: "CSTMXprmntl02"; position: sticky; top: 0; z-index: 4;}
+		ul{margin: 0; list-style: none; padding-left: 60px;}
+		.u{height: 6vh; background-color: #F0F0F0;}
+		li{margin: 0; float: left; font-size: 24px; padding-top: 18px; display: inline-block;}
+		li>a {text-decoration-line: none;}
+		.tab{padding-right: 60px; display: block;}
+
+		.f{display: flex; padding-bottom: 2vh;}
+
+		a{color: black; margin: 0;}
+		.screen{position: relative; overflow: hidden;}
+		.container{height: 8vh; padding-top: 2vh; font-size: 54px;}
+		.item{position: absolute; left: 60px; transition: all 0.5s;}
+		.item2{position: absolute; right: 60px; transition: all 0.5s;}
+		.item3{position: absolute; left: 24vw; top: 10vh; transition: all 0.5s;}
+
+		.back:hover .item{top: -10vh;}
+		.back:hover .item2{top: -10vh;}
+		.back:hover .item3{top: 2vh;}
+
+
+		/*메인*/
+		main{display: flex; margin: 0; padding: 0; position: relative;}
+		.halfl{width: 45vw; height: 84vh; font-family: Union; padding-top: 6vh; padding-left: 60px; font-size: 28px; line-height: 1.17em; color: black; height: 77vh;}
+		.halfr{width: 55vw;}
+		.f2{display: flex; padding-bottom: 4vh;}
+		.number{display: inline-block; height: 36px; width: 40px;}
+		.g{ background-color:#f3f3f3;}
+		.y{background-color:#b5ff24;}
+
+		.bg-black{height: 84vh; display: block; position: relative; overflow: scroll; -ms-overflow-style: none;}
+		.bg-black::-webkit-scrollbar{display:none;}
+		.sub{font-size: 14px; color: black; line-height: 1.6em; word-break: keep-all; text-align: left; padding-left: 20px; padding-right: 60px; font-family:'Noto Sans KR', sans-serif; font-weight: 400;}
+		img{width: 49vw; padding-left: 20px; padding-right: 60px; padding-top: 60px; padding-bottom: 30px;}
+
+		.video{padding-left: 20px; padding-right: 60px; padding-bottom: 80px;}
+		.video-container{width: 100%; height: 0; padding-top: 57%; position: relative;}
+		iframe{width: 100%; height: 100%; top: 0; left: o; position: absolute;}
+
+
+
+
+
+		</style></head>
+
+
+		<body>
+
+		<nav>
+			<div class="back">
+				<div class="screen">
+					<div class="container bg-ye">
+					<div class="item">Hyun</div>
+					<div class="item2">Eugene.official</div>
+						<div class="item3"> Contact me on
+						<a href="https://www.instagram.com/hyuneugene_/">Instagram</a> or
+						<a href="mailto: eugene9713@gamil.com">Email</a></div>
+						</div>
+				</div>
+			</div>
+
+			<div>
+				<ul class="u">
+					<li class="tab"><a href="index.html">Info</a></li>
+					<li class="tab"><a href="uiux.html#nav">Ux.Ui</a></li>
+					<li class="tab"><a href="video.html">Video</a></li>
+					<li class="tab"><a href="graphic.html">Graphic</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="halfl">
+				<div id="btn1">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="y number" style="selected">1.</span></p>
+					<p class="title"><span class="g" style="selected">Whoriend : Concept video featuring <br>characters of each type of behavior <br>used in the application</span> </p>
+					</div>
+				</div>
+				<div id="btn2">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">2.</span></p>
+					<p class="title"><span class="y">Individuality  : Each room shows the individuality <br>of the people living in that room </span> </p>
+					</div>
+				</div>
+				<div id="btn3">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">3.</span></p>
+					<p class="title"><span class="y">Beauty of pattern : designed to promote <br>“Korea’s wonderful pattern”</span> </p>
+					</div>
+				</div>
+				<div id="btn4">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">4.</span></p>
+					<p class="title"><span class="y">Korea landscape : I dream of <br>a folktale-like landscape in my life</span></p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="halfr">
+				<div class="bg-black">
+					<div class="contents">
+						<div id="c1" style="display: block;">
+						<img src="vd1.png" id="vd1">
+						<p class="sub">후렌드[Who(누구와)+Friend(친구가 되다)]는 MZ 세대들이 가치관을 공유하며 친구를 사귀는 소셜 오디오 플랫폼입니다. 현재 MZ 세대들은 어느 때보다도 사회 문제에 열띤 목소리를 내고 있습니다. 자신들의 소신을 거리낌 없이 말하고 자신의 가치관에 맞게 소비할 뿐만 아니라 생활습관의 변화를 위해 노력합니다. 그리고 이러한 가치관에 대한 정보를 공유하고 주변에 추천하고 싶어 합니다. 후렌드는 가치관에 따른 사회문제를 통해 누구와도 친구가 될 수 있는 MZ 세대들을 연결해 줍니다. 또한 관심사와 관련된 사회문제에 관한 정보를 제공하고 이를 어플리케이션 속에서 음성 또는 채팅으로 공유하며 직접 만나지 않아도 가상의 플랫폼 속에서 절친, 즉 후렌드를 만들 수 있는 서비스를 제공합니다.</p>
+						<img src="vd2.png" id="vd2">
+						<div class="video">
+						<div class="video-container">
+						<iframe src="https://www.youtube.com/embed/53bR1T16PPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+						encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div></div>
+						</div>
+
+						<div id="c2" style="display: none;">
+						<img src="vd3.png" id="vd3">
+						<p class="sub">바로 옆에 사람과 내가 다르듯이 사람들은 저마다의 생각과 취미, 개성을 가지고 있습니다. 다양한 사람들의 개성을 그들의 취미와 환경을 표현 할 수 있는 방으로 표현하였습니다. 한 건물안에 각각의 컨셉을 가진 4개의 방을 들여다 보는 형태로 영상이 진행됩니다. 4개의 방은 색도 사용되는 물건도 다릅니다. 이를통해 저마다 다른 특색을 가진 사람들을 상상해 볼 수 있습니다.</p>
+						<img src="vd4.png" id="vd4">
+						<div class="video">
+						<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/Bn6TOdl8Jh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div></div>
+						</div> 
+
+						<div id="c3" style="display: none;">
+						<img src="vd5.png" id="vd5">
+						<p class="sub">‘한국의 멋스러운 패턴’을 알리고 전통적인 것들이 고지식 하다고 생각하는 사람들에게 새로운 인식을 심어주고자 하여 제작한 영상입니다. 전통에 대한 새로운 인식이 필요한 2.30대 젊은 세대 들이나 한국을 잘 알지 못하는 외국인들을 타겟으로 산수화나 책가도를 현대적으로 단순하게 해석하여 재미있는 움직이을 주어 흥미를 유발 할 수 있도록 하였습니다.</p>
+						<img src="vd6.png" id="vd6">
+						<div class="video">
+						<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/DkaYvbGmwTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div></div>
+						</div> 
+
+						<div id="c4" style="display: none;">
+						<img src="vd7.png" id="vd7">
+						<p class="sub">‘민화속 풍경은 어디에서 볼 수 있을까?’ 도심속 생활에서 민화같은 풍경을 꿈꾸지만 볼 수 없는 현실을 표현하였습니다. 비비드한 색감과 텐션있는 모션감을 통해서 환상적인 느낌을 더해주었습니다.</p>
+						<img src="vd8.png" id="vd8">
+						<div class="video">
+						<div class="video-container">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/tisYO8xO4rc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div></div>
+						</div> 
+
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+		</body>
+
+		<script type="text/javascript">
+		
+		function conFuntion(btnNum){
+			var number = document.querySelector("#btn"+String(btnNum)+" > div > p.num > span")
+ 			var question = document.querySelector("#btn"+String(btnNum)+" > div > p.title > span")
+
+ 			if(number.className == 'g number'){
+ 			number.className = 'y number';
+ 			}else if(number.className == 'y number'){
+ 			number.className = 'g number';
+ 			}
+ 			if(question.className == 'g'){
+ 			question.className = 'y';
+ 			}else if(question.className == 'y'){
+ 			question.className = 'g'
+ 			}
+
+ 			for(i=1; i<5; i++){
+ 				if(i===btnNum) continue
+
+ 				var number = document.querySelector("#btn"+String(i)+" > div > p.num > span")
+ 				var question = document.querySelector("#btn"+String(i)+" > div > p.title > span")
+
+ 				if(number.className == 'y number') number.className = 'g number';
+
+ 				if(question.className == 'g') question.className = 'y';
+ 			}
+ 		}
+
+ 		btn1.onclick = function(){ conFuntion(1);clear();c1.style.display = "block";}
+		btn2.onclick = function(){ conFuntion(2);clear();c2.style.display = "block";}
+		btn3.onclick = function(){ conFuntion(3);clear();c3.style.display = "block";}
+		btn4.onclick = function(){ conFuntion(4);clear();c4.style.display = "block";}
+		function clear(){ 
+		c1.style.display = "none";
+		c2.style.display = "none";
+		c3.style.display = "none";
+		c4.style.display = "none";
+		}
+		</script>
+		</html>

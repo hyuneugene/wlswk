@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>UIUX</title>
+
+	<<link href="CSTMXprmntl02-Regular-Web.css" rel="CSTMXprmntl02-Regular-Web" type="text/css"/>
+	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css" />
+
+	<style type="text/css">
+		@import url("CSTMXprmntl02-Regular-Web.css");
+		@import url("stylesheet.css");
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+		@font-face {
+    	font-family: 'CSTMXprmntl02';
+    	src: url('CSTMXprmntl02-Regular-Web.eot'); /* IE9 Compat Modes */
+    	src: url('CSTMXprmntl02-Regular-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CSTMXprmntl02-Regular-Web.woff') format('woff'), /* Modern Browsers */
+         url('CSTMXprmntl02-Regular-Web.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CSTMXprmntl02-Regular-Web.svg#CSTMXprmntl02-Regular-Web') format('svg'); /* Legacy iOS */
+    	font-style: normal;
+    	font-weight: normal;
+    	text-rendering: optimizeLegibility;
+		}
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Regular.eot');
+		    src: local('Union Regular'), local('Union-Regular'),
+		        url('Union-Regular.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Regular.woff2') format('woff2'),
+		        url('Union-Regular.woff') format('woff'),
+		        url('Union-Regular.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-BoldItalic.eot');
+		    src: local('Union Bold Italic'), local('Union-BoldItalic'),
+		        url('Union-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-BoldItalic.woff2') format('woff2'),
+		        url('Union-BoldItalic.woff') format('woff'),
+		        url('Union-BoldItalic.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Italic.eot');
+		    src: local('Union Italic'), local('Union-Italic'),
+		        url('Union-Italic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Italic.woff2') format('woff2'),
+		        url('Union-Italic.woff') format('woff'),
+		        url('Union-Italic.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Bold.eot');
+		    src: local('Union Bold'), local('Union-Bold'),
+		        url('Union-Bold.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Bold.woff2') format('woff2'),
+		        url('Union-Bold.woff') format('woff'),
+		        url('Union-Bold.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: normal;
+		}
+
+		
+		body{margin: 0;}
+		section{font-family: "CSTMXprmntl02"; font-size: 58px;}
+		div p{margin:0;}
+
+
+		.bg-ye{background-color: #b5ff24; transition: all 0.2s;}
+		.bg-gray{background-color: #F0F0F0; transition: all 0.2s;}
+		.bg-wh{background-color: white; transition: all 0.2s;}
+
+
+		nav{font-family: "CSTMXprmntl02"; position: sticky; top: 0; z-index: 4;}
+		ul{margin: 0; list-style: none; padding-left: 60px;}
+		.u{height: 6vh; background-color: #F0F0F0;}
+		li{margin: 0; float: left; font-size: 24px; padding-top: 18px; display: inline-block;}
+		li>a {text-decoration-line: none;}
+		.tab{padding-right: 60px; display: block;}
+
+		.f{display: flex; padding-bottom: 2vh;}
+
+		a{color: black; margin: 0;}
+		.screen{position: relative; overflow: hidden;}
+		.container{height: 8vh; padding-top: 2vh; font-size: 54px;}
+		.item{position: absolute; left: 60px; transition: all 0.5s;}
+		.item2{position: absolute; right: 60px; transition: all 0.5s;}
+		.item3{position: absolute; left: 24vw; top: 10vh; transition: all 0.5s;}
+
+		.back:hover .item{top: -10vh;}
+		.back:hover .item2{top: -10vh;}
+		.back:hover .item3{top: 2vh;}
+
+
+		/*메인*/
+		main{display: flex; margin: 0; padding: 0; position: relative;}
+		.halfl{width: 45vw; height: 84vh; font-family: Union; padding-top: 6vh; padding-left: 60px; font-size: 28px; line-height: 1.17em; color: black; height: 77vh;}
+		.halfr{width: 55vw;}
+		.f2{display: flex; padding-bottom: 4vh;}
+		.number{display: inline-block; height: 36px; width: 40px;}
+		.g{ background-color:#f3f3f3;}
+		.y{background-color:#b5ff24;}
+
+		.bg-black{height: 84vh; display: block; position: relative; overflow: scroll; -ms-overflow-style: none;}
+		.bg-black::-webkit-scrollbar{display:none;}
+		.sub{font-size: 14px; color: black; line-height: 1.6em; word-break: keep-all; text-align: left; padding-left: 20px; padding-right: 60px; font-family:'Noto Sans KR', sans-serif; font-weight: 400;}
+		img{width: 49vw; padding-left: 20px; padding-right: 60px; padding-top: 60px; padding-bottom: 30px;}
+		#ux2{padding-bottom: 80px;}
+		#ux4{padding-bottom: 80px;}
+		#ux6{padding-bottom: 80px;}
+		#ux8{padding-bottom: 80px;}
+
+
+
+		</style></head>
+
+
+		<body>
+
+		<nav>
+			<div class="back">
+				<div class="screen">
+					<div class="container bg-ye">
+					<div class="item">Hyun</div>
+					<div class="item2">Eugene.official</div>
+						<div class="item3"> Contact me on
+						<a href="https://www.instagram.com/hyuneugene_/">Instagram</a> or
+						<a href="mailto: eugene9713@gamil.com">Email</a></div>
+						</div>
+				</div>
+			</div>
+
+			<div>
+				<ul class="u">
+					<li class="tab"><a href="index.html#nav">Info</a></li>
+					<li class="tab"><a href="uiux.html">Ux.Ui</a></li>
+					<li class="tab"><a href="video.html">Video</a></li>
+					<li class="tab"><a href="graphic.html">Graphic</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="halfl">
+				<div id="btn1">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="y number" style="selected">1.</span></p>
+					<p class="title"><span class="g" style="selected">Whoriend : social audio platform <br> where MZ generations share values <br>and make friends</span> </p>
+					</div>
+				</div>
+				<div id="btn2">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">2.</span></p>
+					<p class="title"><span class="y">Workie : a company life management platform<br>for people who want to work well</span> </p>
+					</div>
+				</div>
+				<div id="btn3">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">3.</span></p>
+					<p class="title"><span class="y">Samsung UK Cell phone sales detail page :<br>Convenient detail page to induce purchase</span> </p>
+					</div>
+				</div>
+				<div id="btn4">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">4.</span></p>
+					<p class="title"><span class="y">OHU : Communication SNS application <br>that makes contact with precious people <br>easy and special</span></p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="halfr">
+				<div class="bg-black">
+					<div class="contents">
+						<div id="c1" style="display: block;">
+						<img src="ux1.jpg" id="ux1">
+						<p class="sub">후렌드[Who(누구와)+Friend(친구가 되다)]는 MZ 세대들이 가치관을 공유하며 친구를 사귀는 소셜 오디오 플랫폼입니다. 현재 MZ 세대들은 어느 때보다도 사회 문제에 열띤 목소리를 내고 있습니다. 자신들의 소신을 거리낌 없이 말하고 자신의 가치관에 맞게 소비할 뿐만 아니라 생활습관의 변화를 위해 노력합니다. 그리고 이러한 가치관에 대한 정보를 공유하고 주변에 추천하고 싶어 합니다. 후렌드는 가치관에 따른 사회문제를 통해 누구와도 친구가 될 수 있는 MZ 세대들을 연결해 줍니다. 또한 관심사와 관련된 사회문제에 관한 정보를 제공하고 이를 어플리케이션 속에서 음성 또는 채팅으로 공유하며 직접 만나지 않아도 가상의 플랫폼 속에서 절친, 즉 후렌드를 만들 수 있는 서비스를 제공합니다.</p>
+						<img src="ux2.jpg" id="ux2">
+						</div>
+
+						<div id="c2" style="display: none;">
+						<img src="ux3.jpg" id="ux3">
+						<p class="sub">알잘딱깔센* 일잘러를 위한 회사 생활관리 플랫폼입니다.‘내가 지금 잘 하고 있는 걸까?’, workie 는 하루에도 몇 번씩 자신에게 묻는 직장인들에게 대답을 해주기 위해 시작했습니다. 스스로 어제의 자신을 돌아보고 한 발 성장한 자기 자신을 확인하면서 원동력을 얻는 건 어떨까요?페이스메이커 workie 는 든든한 선배이자 가이드, 때론 친구입니다. 목표 기록을 설정하고 달성할 수 있도록 할 뿐만 아니라 지나친 열정으로 인해 찾아오는 번아웃 없이 처음부터 끝까지 자신의 페이스를 지키며 달릴 수 있도록 회사 생활에 올바른 방향성을 제시해 줍니다. workie와 함께라면 누군가에게 질문하는 것을 어려워하는 성격을 가졌다고 해서 걱정할 필요가 없습니다. 모르는 부분이 생겼을 때 누군가에게 도움을 받아 알게되는 지식은 순간적이며, 자기 것이 되기 어렵죠. 입사 온보딩 중인 신입사원, 다 안다고 생각했지만 실은 잘못 알고 있던 기존 사원, 육아 휴직이나 장기 휴가로 업데이트된 정보를 얻고자 하는 고참 사원 모두 회사의 지속적인 배움을 위한 열린 창구, 라이브러리에서 스스로 찾고 익힙니다.<br>*알아서 잘 딱 깔끔하고 센스있게</p>
+						<img src="ux4.jpg" id="ux4">
+						</div> 
+
+						<div id="c3" style="display: none;">
+						<img src="ux5.png" id="ux5">
+						<p class="sub">코로나 19 이후로 온라인 주문이 많아진 삼성 휴대폰 상세페이지 UK 버전을 필요에 맞게 리디자인 하였습니다. 구매에 도움이 될 수 있도록 복잡했던 디자인을 정리하였고 삼성이 밀고 있는 서비스인 Trade-In과 AR view의 위치와 사용성을 고려해 디자인 하였습니다.</p>
+						</div> 
+
+						<div id="c4" style="display: none;">
+						<img src="ux7.jpg" id="ux7">
+						<p class="sub">서로에게 소홀해지는 바쁜 일상 속, 소중한  사람들과의 연락을 쉽고 특별하게 만들어주는 커뮤니케이션 기반 SNS 어플리케이션을 디자인 하였습니다.‘오늘도 우리는 함께한다’라는 슬로건에서 글자를 조합하여 만들었으며 감성적으로 접근하는 앱이기 때문에 노을이 지는 오후와 잘 어울린다고 생각하여 ‘오후’라고 이름 붙였습니다. 시간표와 캘린더를 레이어로 쌓아 만날 수 있는 시간을 쉽게 체크할 수 있습니다. 또한 ‘심심함’을 표시하는 아이콘으로 일정시간안에만 유지되는 채팅방에서 채팅이 가능합니다. 한줄일기 기능은 설정해 놓은 일정시간에 하루를 마무리하는 한줄을 공유 할 수 있습니다. 기존 SNS스크랩북은 가고싶어서 캡처해놨던 곳을 보기 쉽게 정리해 주는 기능입니다.</p>
+						<img src="ux8.jpg" id="ux8">
+						</div> 
+
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+		</body>
+
+		<script type="text/javascript">
+		
+		function conFuntion(btnNum){
+			var number = document.querySelector("#btn"+String(btnNum)+" > div > p.num > span")
+ 			var question = document.querySelector("#btn"+String(btnNum)+" > div > p.title > span")
+
+ 			if(number.className == 'g number'){
+ 			number.className = 'y number';
+ 			}else if(number.className == 'y number'){
+ 			number.className = 'g number';
+ 			}
+ 			if(question.className == 'g'){
+ 			question.className = 'y';
+ 			}else if(question.className == 'y'){
+ 			question.className = 'g'
+ 			}
+
+ 			for(i=1; i<5; i++){
+ 				if(i===btnNum) continue
+
+ 				var number = document.querySelector("#btn"+String(i)+" > div > p.num > span")
+ 				var question = document.querySelector("#btn"+String(i)+" > div > p.title > span")
+
+ 				if(number.className == 'y number') number.className = 'g number';
+
+ 				if(question.className == 'g') question.className = 'y';
+ 			}
+ 		}
+
+ 		btn1.onclick = function(){ conFuntion(1);clear();c1.style.display = "block";}
+		btn2.onclick = function(){ conFuntion(2);clear();c2.style.display = "block";}
+		btn3.onclick = function(){ conFuntion(3);clear();c3.style.display = "block";}
+		btn4.onclick = function(){ conFuntion(4);clear();c4.style.display = "block";}
+		function clear(){ 
+		c1.style.display = "none";
+		c2.style.display = "none";
+		c3.style.display = "none";
+		c4.style.display = "none";
+		}
+		</script>
+		</html>

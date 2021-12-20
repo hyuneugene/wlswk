@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>VIDEO</title>
+
+	<link href="CSTMXprmntl02-Regular-Web.css" rel="CSTMXprmntl02-Regular-Web" type="text/css"/>
+	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css" />
+
+	<style type="text/css">
+		@import url("CSTMXprmntl02-Regular-Web.css");
+		@import url("stylesheet.css");
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+		@font-face {
+    	font-family: 'CSTMXprmntl02';
+    	src: url('CSTMXprmntl02-Regular-Web.eot'); /* IE9 Compat Modes */
+    	src: url('CSTMXprmntl02-Regular-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CSTMXprmntl02-Regular-Web.woff') format('woff'), /* Modern Browsers */
+         url('CSTMXprmntl02-Regular-Web.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CSTMXprmntl02-Regular-Web.svg#CSTMXprmntl02-Regular-Web') format('svg'); /* Legacy iOS */
+    	font-style: normal;
+    	font-weight: normal;
+    	text-rendering: optimizeLegibility;
+		}
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Regular.eot');
+		    src: local('Union Regular'), local('Union-Regular'),
+		        url('Union-Regular.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Regular.woff2') format('woff2'),
+		        url('Union-Regular.woff') format('woff'),
+		        url('Union-Regular.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-BoldItalic.eot');
+		    src: local('Union Bold Italic'), local('Union-BoldItalic'),
+		        url('Union-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-BoldItalic.woff2') format('woff2'),
+		        url('Union-BoldItalic.woff') format('woff'),
+		        url('Union-BoldItalic.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Italic.eot');
+		    src: local('Union Italic'), local('Union-Italic'),
+		        url('Union-Italic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Italic.woff2') format('woff2'),
+		        url('Union-Italic.woff') format('woff'),
+		        url('Union-Italic.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Bold.eot');
+		    src: local('Union Bold'), local('Union-Bold'),
+		        url('Union-Bold.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Bold.woff2') format('woff2'),
+		        url('Union-Bold.woff') format('woff'),
+		        url('Union-Bold.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: normal;
+		}
+
+
+
+		
+		body{margin: 0;}
+		section{font-family: "CSTMXprmntl02"; font-size: 58px;}
+		div p{margin:0;}
+
+
+		.bg-ye{background-color: #b5ff24; transition: all 0.2s;}
+		.bg-gray{background-color: #F0F0F0; transition: all 0.2s;}
+		.bg-wh{background-color: white; transition: all 0.2s;}
+
+
+		nav{font-family: "CSTMXprmntl02"; position: sticky; top: 0; z-index: 4;}
+		ul{margin: 0; list-style: none; padding-left: 60px;}
+		.u{height: 6vh; background-color: #F0F0F0;}
+		li{margin: 0; float: left; font-size: 24px; padding-top: 18px; display: inline-block;}
+		li>a {text-decoration-line: none;}
+		.tab{padding-right: 60px; display: block;}
+
+		.f{display: flex; padding-bottom: 2vh;}
+
+		a{color: black; margin: 0;}
+		.screen{position: relative; overflow: hidden;}
+		.container{height: 8vh; padding-top: 2vh; font-size: 54px;}
+		.item{position: absolute; left: 60px; transition: all 0.5s;}
+		.item2{position: absolute; right: 60px; transition: all 0.5s;}
+		.item3{position: absolute; left: 24vw; top: 10vh; transition: all 0.5s;}
+
+		.back:hover .item{top: -10vh;}
+		.back:hover .item2{top: -10vh;}
+		.back:hover .item3{top: 2vh;}
+
+
+		/*메인*/
+		main{display: flex; margin: 0; padding: 0; position: relative;}
+		.halfl{width: 45vw; height: 84vh; font-family: Union; padding-top: 6vh; padding-left: 60px; font-size: 28px; line-height: 1.17em; color: black; height: 77vh;}
+		.halfr{width: 55vw;}
+		.f2{display: flex; padding-bottom: 4vh;}
+		.number{display: inline-block; height: 36px; width: 40px;}
+		.g{ background-color:#f3f3f3;}
+		.y{background-color:#b5ff24;}
+
+		.bg-black{height: 84vh; background-color: white; display: block; position: relative; overflow: scroll; -ms-overflow-style: none;}
+		.bg-black::-webkit-scrollbar{display:none;}
+		.sub{font-size: 14px; color: black; line-height: 1.6em; word-break: keep-all; text-align: left; padding-left: 20px; padding-right: 60px; font-family:'Noto Sans KR', sans-serif; font-weight: 400;}
+		img{width: 49vw; padding-left: 20px; padding-right: 60px; padding-top: 60px; padding-bottom: 30px;}
+		#gr2{padding-bottom: 80px;}
+		#gr4{padding-bottom: 80px;}
+		#gr7{padding-bottom: 80px; padding-top: 0;}
+		#gr9{padding-bottom: 80px;}
+
+
+
+		</style></head>
+
+
+		<body>
+
+		<nav>
+			<div class="back">
+				<div class="screen">
+					<div class="container bg-ye">
+					<div class="item">Hyun</div>
+					<div class="item2">Eugene.official</div>
+						<div class="item3"> Contact me on
+						<a href="https://www.instagram.com/hyuneugene_/">Instagram</a> or
+						<a href="mailto: eugene9713@gamil.com">Email</a></div>
+						</div>
+				</div>
+			</div>
+
+			<div>
+				<ul class="u">
+					<li class="tab"><a href="index.html">Info</a></li>
+					<li class="tab"><a href="uiux.html#nav">Ux.Ui</a></li>
+					<li class="tab"><a href="video.html">Video</a></li>
+					<li class="tab"><a href="graphic.html">Graphic</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<main>
+			<div class="halfl">
+				<div id="btn1">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="y number" style="selected">1.</span></p>
+					<p class="title"><span class="g" style="selected">The paranoid zone : National Museum <br>of Modern and Contemporary Art’s special <br>exhibition poster and pamphlet re-design</span> </p>
+					</div>
+				</div>
+				<div id="btn2">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">2.</span></p>
+					<p class="title"><span class="y">National health gymnastics :  that disappeared <br>into memory designed a book that reminds of it.</span> </p>
+					</div>
+				</div>
+				<div id="btn3">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">3.</span></p>
+					<p class="title"><span class="y">Seoul fairytale festival : Rebranding the <br>Children’s Day event held every year <br>at Children’s Grand Park in Gwangjin-gu.</span> </p>
+					</div>
+				</div>
+				<div id="btn4">
+					<div class="f2" style="cursor:pointer;">
+					<p class="num"><span class="g number">4.</span></p>
+					<p class="title"><span class="y">Walljjag : Branding of abandoned dog <br>adoption center in the form of a theme park <br>that connects the elderly and abandoned dogs.</span></p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="halfr">
+				<div class="bg-black">
+					<div class="contents">
+						<div id="c1" style="display: block;">
+						<img src="gr1.png" id="gr1">
+						<p class="sub">국립현대미술관 기획전 <망상지구>는 문화예술분야에서 중진으로 활발히 활동하고 있는 작가들의 협업 프로젝트입니다. 이 전시의 리플렛과 포스터를 리디자인 하였습니다. 기존의 전시와 관련 없어 보이는 포스터 대신에 전시의 미리보기 느낌의 홍보물을 만들기 위해 전시 중 길게 늘어진 천막 사이로 새어나오는 빛이 보이는 작품을 시각화 하여 요소로 사용하였습니다.</p>
+						<img src="gr2.png" id="gr2">
+						</div>
+
+						<div id="c2" style="display: none;">
+						<img src="gr3.png" id="gr3">
+						<p class="sub">추억 속으로 사라진 <국민건강체조>를  떠올릴 수 있게 해주는 책을 디자인 하였다. 국민건강체조에대한 인트로와 4가지로 나누어진 체조를 각각 한권의 책으로 만들어 총 5권의 책과 1장의 포스터로 구성됩니다. 국민건강체조에대한 소개책만 내용이 다르기 때문에 다른 책들과 디자인도 다르게 작업하였습니다. 다른 4권에는 땅뚜드리기 동작(1가지), 하늘보기 동작(7가지), 사람마주보기 동작(7가지), 정리운동 동작(3가지)에 대한 효과와 운동 방법으로 구성되어있습니다. </p>
+						<img src="gr4.png" id="gr4">
+						</div> 
+
+						<div id="c3" style="display: none;">
+						<img src="gr5.png" id="gr5">
+						<p class="sub">매년 광진구 어린이대공원에서 열리는 서울동화 축제의 기존의 중구난방한 컨셉에 확실한 정체성을 부여해 리브랜딩 하였습니다. 서울동화축제에서 응용되는 비주얼 아이덴티티는 서울동화축제의 4가지 컨텐츠인 음식, 음악, 모험, 미술에서 모티브로 만들어졌습니다. 기존의 무작위로 동화를 선정했던 방식 대신 서울동화축제의 4가지 컨텐츠 (음식, 음악, 모험, 미술)를 만들어 이에 따른 동화를 선정하도록 하였습니다. 매년 4가지 컨텐츠의 주제에 대한 동화가 선정되어 어린이들에게 다양한 체험을 제공합니다.</p>
+						<img src="gr6.png" id="gr6">
+						<img src="gr7.png" id="gr7">
+						</div> 
+
+						<div id="c4" style="display: none;">
+						<img src="gr8.png" id="gr8">
+						<p class="sub">노인과 유기견을 연결시켜주는 서비스를 기획하여 파트너를 테마로 한 테마파크 형식의 유기견 입양센터를 브랜딩 하였습니다. 짧은 첫인상으로 입양하던 기존 방식과 다르게 유기견과의 일상생활을 하루동안 체험해보는 데이트 방식을 통해 정말 잘 맞는 파트너를 찾을 수 있습니다. 유기견과 예비입양자의 행동·성격을 분석한 매칭가이드맵을 통해 데이트 상대를 선택하면 강아지가 좋아하는 산책, 놀이 등 다양한 활동을 함께 즐기는 교감의 기회를 제공합니다.</p>
+						<img src="gr9.png" id="gr9">
+						</div> 
+
+					</div>
+				</div>
+
+			</div>
+
+		</main>
+
+		</body>
+
+		<script type="text/javascript">
+		
+		function conFuntion(btnNum){
+			var number = document.querySelector("#btn"+String(btnNum)+" > div > p.num > span")
+ 			var question = document.querySelector("#btn"+String(btnNum)+" > div > p.title > span")
+
+ 			if(number.className == 'g number'){
+ 			number.className = 'y number';
+ 			}else if(number.className == 'y number'){
+ 			number.className = 'g number';
+ 			}
+ 			if(question.className == 'g'){
+ 			question.className = 'y';
+ 			}else if(question.className == 'y'){
+ 			question.className = 'g'
+ 			}
+
+ 			for(i=1; i<5; i++){
+ 				if(i===btnNum) continue
+
+ 				var number = document.querySelector("#btn"+String(i)+" > div > p.num > span")
+ 				var question = document.querySelector("#btn"+String(i)+" > div > p.title > span")
+
+ 				if(number.className == 'y number') number.className = 'g number';
+
+ 				if(question.className == 'g') question.className = 'y';
+ 			}
+ 		}
+
+ 		btn1.onclick = function(){ conFuntion(1);clear();c1.style.display = "block";}
+		btn2.onclick = function(){ conFuntion(2);clear();c2.style.display = "block";}
+		btn3.onclick = function(){ conFuntion(3);clear();c3.style.display = "block";}
+		btn4.onclick = function(){ conFuntion(4);clear();c4.style.display = "block";}
+		function clear(){ 
+		c1.style.display = "none";
+		c2.style.display = "none";
+		c3.style.display = "none";
+		c4.style.display = "none";
+		}
+		</script>
+		</html>

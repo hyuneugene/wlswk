@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Union';
+    src: url('Union-Regular.eot');
+    src: local('Union Regular'), local('Union-Regular'),
+        url('Union-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Union-Regular.woff2') format('woff2'),
+        url('Union-Regular.woff') format('woff'),
+        url('Union-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Union';
+    src: url('Union-BoldItalic.eot');
+    src: local('Union Bold Italic'), local('Union-BoldItalic'),
+        url('Union-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Union-BoldItalic.woff2') format('woff2'),
+        url('Union-BoldItalic.woff') format('woff'),
+        url('Union-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Union';
+    src: url('Union-Italic.eot');
+    src: local('Union Italic'), local('Union-Italic'),
+        url('Union-Italic.eot?#iefix') format('embedded-opentype'),
+        url('Union-Italic.woff2') format('woff2'),
+        url('Union-Italic.woff') format('woff'),
+        url('Union-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Union';
+    src: url('Union-Bold.eot');
+    src: local('Union Bold'), local('Union-Bold'),
+        url('Union-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Union-Bold.woff2') format('woff2'),
+        url('Union-Bold.woff') format('woff'),
+        url('Union-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+

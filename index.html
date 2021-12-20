@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+
+	<link href="CSTMXprmntl02-Regular-Web.css" rel="CSTMXprmntl02-Regular-Web" type="text/css"/>
+	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css" />
+
+	<style type="text/css">
+		@import url("CSTMXprmntl02-Regular-Web.css");
+		@import url("stylesheet.css");
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap');
+
+		@font-face {
+    	font-family: 'CSTMXprmntl02';
+    	src: url('CSTMXprmntl02-Regular-Web.eot'); /* IE9 Compat Modes */
+    	src: url('CSTMXprmntl02-Regular-Web.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('CSTMXprmntl02-Regular-Web.woff') format('woff'), /* Modern Browsers */
+         url('CSTMXprmntl02-Regular-Web.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('CSTMXprmntl02-Regular-Web.svg#CSTMXprmntl02-Regular-Web') format('svg'); /* Legacy iOS */
+    	font-style: normal;
+    	font-weight: normal;
+    	text-rendering: optimizeLegibility;
+		}
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Regular.eot');
+		    src: local('Union Regular'), local('Union-Regular'),
+		        url('Union-Regular.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Regular.woff2') format('woff2'),
+		        url('Union-Regular.woff') format('woff'),
+		        url('Union-Regular.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-BoldItalic.eot');
+		    src: local('Union Bold Italic'), local('Union-BoldItalic'),
+		        url('Union-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-BoldItalic.woff2') format('woff2'),
+		        url('Union-BoldItalic.woff') format('woff'),
+		        url('Union-BoldItalic.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Italic.eot');
+		    src: local('Union Italic'), local('Union-Italic'),
+		        url('Union-Italic.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Italic.woff2') format('woff2'),
+		        url('Union-Italic.woff') format('woff'),
+		        url('Union-Italic.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'Union';
+		    src: url('Union-Bold.eot');
+		    src: local('Union Bold'), local('Union-Bold'),
+		        url('Union-Bold.eot?#iefix') format('embedded-opentype'),
+		        url('Union-Bold.woff2') format('woff2'),
+		        url('Union-Bold.woff') format('woff'),
+		        url('Union-Bold.ttf') format('truetype');
+		    font-weight: bold;
+		    font-style: normal;
+		}
+		
+		*{margin: 0; padding: 0;}		
+		section{font-family: "CSTMXprmntl02"; font-size: 60px;}
+		div p{margin:0;}
+		.a{height: 12.5vh; line-height: 12.5vh; }
+		.b{height: 8vh; padding-top: 2vh; font-size: 54px;}
+		.c{position: relative; height: 10vh; padding-top: 2.5vh;}
+		
+		.txt1{position: absolute; left:46vw; transition: all 0.5s;}
+		.txt2{position: absolute; left:36vw; transition: all 0.5s;}
+		.txt3{position: absolute; right:39.5vw; transition: all 0.5s;}
+		.txt4{position: absolute; left:34.5vw; transition: all 0.5s;}
+		.txt5{position: absolute; left:36vw; transition: all 0.5s;}
+		.txt6{position: absolute; right:40.5vw; transition: all 0.5s;}
+		.txt7{position: absolute; right:36.5vw; transition: all 0.5s;}
+
+		.c1{position: absolute; left: 32vw; transition: all 0.5s;}
+		.c2{position: absolute; left: 43vw; transition: all 0.5s;}
+		.c3{position: absolute; right: 32vw; transition: all 0.5s;}
+
+		.himg{position: absolute;}
+		#hp1{top: 8vh; left: 29vw; width: 260px; height: auto; opacity: 0; transition-delay: 0.1s}
+		#hp2{top: 54vh; left: 4vw; width: 260px; height: auto; opacity: 0; transition-delay: 0.1s} 
+		#hp3{top: 53vh; left: 67vw; width: 260px; height: auto; opacity: 0; transition-delay: 0.1s}
+
+
+		#aa:hover .txt1{left: 60px;} 
+		#aa:hover .txt2{left: 60px;}
+		#aa:hover .txt3{right:60px;}
+		#aa:hover + #bb .txt4{left: 60px;}
+		#aa:hover + #bb .txt5{left: 60px;}
+		#aa:hover + #bb .txt6{right: 60px;}
+		#aa:hover ~ #cc .txt7{right: 60px;}
+		#aa:hover ~ #cc .c1{left: 60px;}
+		#aa:hover ~ #cc .c3{right: 60px;}
+
+		#aa:hover .bg-ye{background-color:#F0F0F0;}
+		#aa:hover .bg-gray{background-color:white;}
+		#aa:hover .bg-wh{background-color:#b5ff24;}
+		#aa:hover + #bb .bg-ye{background-color:#F0F0F0;}
+		#aa:hover + #bb .bg-gray{background-color:white;}
+		#aa:hover + #bb .bg-wh{background-color:#b5ff24;}
+		#aa:hover ~ #cc .bg-ye{background-color:#F0F0F0;}
+		#aa:hover ~ #cc .bg-gray{background-color:white;}
+
+		#aa:hover ~ #hp1{opacity: 1;}
+		#aa:hover ~ #hp2{opacity: 1;}
+		#aa:hover ~ #hp3{opacity: 1;}
+
+
+
+		.bg-ye{background-color: #b5ff24; transition: all 0.2s;}
+		.bg-gray{background-color: #F0F0F0; transition: all 0.2s;}
+		.bg-wh{background-color: white; transition: all 0.2s;}
+
+
+		nav{font-family: "CSTMXprmntl02"; position: sticky; top: 0; z-index: 4;}
+		ul{margin: 0; list-style: none; padding-left: 60px;}
+		.u{height: 6vh; background-color: #F0F0F0;}
+		li{margin: 0; float: left; font-size: 24px; padding-top: 18px; display: inline-block;}
+		li>a {text-decoration-line: none;}
+		.tab{padding-right: 60px; display: block;}
+
+		.f{display: flex; padding-bottom: 2vh;}
+
+		a{color: black; margin: 0;}
+		.screen{position: relative; overflow: hidden;}
+		.container{height: 8vh; padding-top: 2vh; font-size: 54px;}
+		.item{position: absolute; left: 60px; transition: all 0.5s;}
+		.item2{position: absolute; right: 60px; transition: all 0.5s;}
+		.item3{position: absolute; left: 24vw; top: 10vh; transition: all 0.5s;}
+
+		.back:hover .item{top: -10vh;}
+		.back:hover .item2{top: -10vh;}
+		.back:hover .item3{top: 2vh;}
+
+
+		main{display: flex;}
+		.halfl{width: 40vw; height: 84vh; background-color:black; color:#D3D3D3;}
+		.halfr{width: 60vw; height: 84vh; background-color:black;}
+		.info{font-family: Union; padding-top:6vh; padding-left: 60px; font-size: 16px; line-height: 1.35em;}
+		h4{padding-bottom: 20px;}
+		.content{padding-left: 40px;}
+		.year{font-style: italic;}
+
+		.bg-black{background-color: black; display: block; position: relative; overflow: scroll; -ms-overflow-style: none;}
+		.bg-black::-webkit-scrollbar{ display:none; }
+
+		img{position: absolute;}
+		.rimg:hover{opacity: 0.4;}
+		#p1:hover ~ .n1{opacity: 1;}
+		#p2:hover ~ .n2{opacity: 1;}
+		#p3:hover ~ .n3{opacity: 1;}
+		#p4:hover ~ .n4{opacity: 1;}
+		#p5:hover ~ .n5{opacity: 1;}
+		#p6:hover ~ .n6{opacity: 1;}
+		#p7:hover ~ .n7{opacity: 1;}
+
+		#p1{top: 5vh; left: 6vw; width: 250px; height: auto; transform: rotate(15deg);}
+		#p2{top: 23vh; left: 25vw; width: 180px; height: auto; transform: rotate(8deg);}
+		#p3{top: 8vh; left: 48vw; width: 75px; height: auto; transform: rotate(-5deg);}
+		#p4{top: 28vh; left: 1vw; width: 210px; height: auto; transform: rotate(-10deg);}
+		#p5{top: 76vh; left: 3vw; width: 250px; height: auto;}
+		#p6{top: 63vh; left: 43vw; width: 240px; height: auto; transform: rotate(3deg);}
+		#p7{top: 78vh; left: 25vw; width: 190px; height: auto; transform: rotate(-6deg);}
+		#space{position: absolute; top: 108vh; left: 1vw; height: 5vh; width: 50px;}
+
+		.name{font-family: "CSTMXprmntl02"; color: white; font-size: 24px; position: absolute; opacity: 0;}
+		.n1{top: 12vh; left: 11vw;}
+		.n2{top: 39vh; left: 29.5vw;}
+		.n3{top: 29vh; left: 48vw; }
+		.n4{top: 45vh; left: 5vw; }
+		.n5{top: 85vh; left: 8vw; }
+		.n6{top: 77vh; left: 47vw; }
+		.n7{top: 90vh; left: 28vw; }
+
+	
+	</style>
+
+</head>
+
+
+<body>
+	<section>
+		<div id="aa">
+			<div class="a bg-ye">
+				<div class="txt1">Hello,</div>
+			</div>
+
+			<div class="a bg-gray">
+				<div class="txt2">I'm Ux Ui Designer</div>
+			</div>
+
+			<div class="a bg-wh">
+				<p class="txt3">Hyun eugene</p>
+			</div>
+		</div>
+
+
+		<div id="bb">
+			<div class="a bg-ye">
+				<p class="txt4">2019-2021 Portfoilo</p>
+			</div>
+
+			<div class="a bg-gray">
+				<p class="txt5">If you scroll down,</p>
+			</div>
+
+			<div class="a bg-wh">
+				<p class="txt6">You can see</p>
+			</div>
+		</div>
+
+		<div id="cc">
+			<div class="a bg-ye">
+				<p class="txt7">My various works</p>
+			</div>
+
+			<div class="c bg-gray">
+				<p class="c1">Ux.Ui</p>
+				<p class="c2">Graphic</p>
+				<p class="c3">Video</p>
+			</div>
+		</div>
+		<img src="hp1.png" id="hp1" class="himg">
+		<img src="hp2.png" id="hp2" class="himg">
+		<img src="hp3.png" id="hp3" class="himg">
+	</section>
+
+	<nav>
+		<div class="back">
+				<div class="screen">
+					<div class="container bg-ye">
+					<div class="item">Hyun</div>
+					<div class="item2">Eugene.official</div>
+					<div class="item3"> Contact me on
+						<a href="https://www.instagram.com/hyuneugene_/">Instagram</a> or
+						<a href="mailto:﻿eugene9713@gamil.com">Email</a></div>
+					</div>
+				</div>
+		</div>
+
+		<div>
+		<ul class="u">
+			<li class="tab"><a href="index.html">Info</a></li>
+			<li class="tab"><a href="uiux.html#nav">Ux.Ui</a></li>
+			<li class="tab"><a href="video.html">Video</a></li>
+			<li class="tab"><a href="graphic.html">Graphic</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		
+		<div class="halfl">
+			<div class="info">
+				<div>
+					<h4>Education</h4>
+					<div class="f">
+						<p class="year">2022</p>
+						<p class="content">Visual Design at Seoul National University of Science and Technology</p>
+					</div>
+				</div>
+				<div>
+					
+					<h4>Experience</h4>
+					<div class="f">
+						<p class="year">2018</p>
+						<p class="content">Design manager of student council at the university<br>
+						Participated in the ‘Flickers’ exhibition during the vacation</p>
+					</div>
+					<div class="f">
+						<p class="year">2019</p>
+						<p class="content">Vice chairman of student council at the university<br>
+						Participated in the public exhibition of “Seoul Museum of Art” hosted by Seoul</p>
+					</div>
+					<div class="f">
+						<p class="year">2020</p>
+						<p class="content">Nexon Social Contribution Department Design Intern<br>
+						Cheil Worldwide Web design short-term contract worker<br>
+						Muse Clinic Motion Graphic Designer</p>
+					</div>
+					<div class="f">
+						<p class="year">2021</p>
+						<p class="content">Participating in the university’s joint exhibition, Octarin<br>
+						Seoul National University of Science and Technology’s 39th graduation<br>exhibition, Visual Gardener</p>
+					</div>
+					
+				</div>
+					
+				<div>
+					<h4>Skill</h4>
+					<p class="f">Illustration / Photo shop / After effect / Primer pro / Cenima 4d / Xd</p>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="halfr bg-black">
+			<div class="risc">
+				<img src="1.png" id="p1" class="rimg">
+				<img src="2.png" id="p2" class="rimg">
+				<img src="3.png" id="p3" class="rimg">
+				<img src="4.png" id="p4" class="rimg">
+				<img src="5.png" id="p5" class="rimg">
+				<img src="6.png" id="p6" class="rimg">
+				<img src="7.png" id="p7" class="rimg">
+				<div id="space"></div>
+				<div class="name n1">Video</div>
+				<div class="name n2">Ux.Ui</div>
+				<div class="name n3">Video</div>
+				<div class="name n4">Ux.Ui</div>
+				<div class="name n5">Video</div>
+				<div class="name n6">Graphic</div>
+				<div class="name n7">Graphic</div>
+				
+			</div>
+			
+		</div>
+	</main>
+
+</body>
+
+<script type="text/javascript">
+
+</script>
+
+</html>
